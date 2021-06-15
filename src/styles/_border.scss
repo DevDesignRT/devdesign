@@ -1,0 +1,10 @@
+.border {
+  height: 0.4rem;
+  border: none !important;
+  &--orange {
+    background-image: $orangeLinearGradientToRight;
+  }
+  &--pink {
+    background-image: $pinkLinearGradientToRight;
+  }
+}

@@ -1,0 +1,43 @@
+footer {
+  padding: 2rem 0;
+  position: relative;
+  min-height: 35vh;
+  width: 100%;
+  background-image: $radialGradientToCenter;
+  h4 {
+    color: $hotpink;
+  }
+  p {
+    color: $white;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--contactLink {
+      color: $white;
+      &--second {
+        margin-top: 1rem;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .list-group-item {
+    background-color: $white;
+    border-bottom: none;
+  }
+  p,
+  .list-group-item {
+    color: $white;
+  }
+  .pinkLink {
+    color: $hotpink;
+    font-weight: 500;
+    font-size: 1.2rem;
+    &:hover {
+      color: $hotpink;
+    }
+  }
+}

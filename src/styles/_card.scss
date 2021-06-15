@@ -1,0 +1,20 @@
+.card {
+  border-radius: 15px;
+  box-shadow: $softShadow;
+  &--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 1rem;
+    background-image: $pinkLinearGradientToRight80;
+    color: $midnightblue;
+    &:hover {
+      color: $midnightblue;
+    }
+  }
+  &--content {
+    padding: 1rem;
+  }
+}

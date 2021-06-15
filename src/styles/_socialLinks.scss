@@ -1,0 +1,14 @@
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &--icon {
+    color: $white;
+    width: 4rem;
+    height: 4rem;
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}

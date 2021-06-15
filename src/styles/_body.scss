@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $sourceSansPro;
+}
+
+main {
+  min-height: 80vh;
+  background-color: $lavender;
+}
+section:nth-of-type(2) {
+  padding: 2rem 0;
+}
+
+.mainSection {
+  color: $midnightblue;
+  p {
+    color: $midnightblue;
+  }
+}
+
+.form-group {
+  margin-top: 1.5rem;
+}
+
+.flexSection {
+  display: flex;
+  flex-direction: row;
+}

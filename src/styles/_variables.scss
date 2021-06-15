@@ -1,0 +1,46 @@
+/* Font */
+$sourceSansPro: "Source Sans Pro", sans-serif;
+
+/* Colors */
+/* Primary colors */
+$violet: #221e56;
+$midnightblue: #0f0868;
+$ligtermidnightBlue: #2b2a73;
+$hotpink: #e55cb8;
+$lightpink: #f27495;
+$lavender: #e0e5f0;
+$goldenrod: #e4ba0a;
+$orangishRod: #f26b63;
+
+/* Gray colors */
+$gray100: #f8f8f8;
+$gray200: #eeeeee;
+$gray300: #e8e8e8;
+$gray900: #434343;
+
+/* Black and White colors */
+$black: #000000;
+$white: #ffffff;
+$transparent: transparent;
+
+/* Gradients */
+$pinkLinearGradientToRight: linear-gradient(to right, $lightpink, $hotpink);
+$orangeLinearGradientToRight: linear-gradient(
+  to right,
+  $goldenrod,
+  $orangishRod
+);
+$pinkLinearGradientToRight80: linear-gradient(
+  to right,
+  rgba($lightpink, 0.8),
+  rgba($hotpink, 0.8)
+);
+$radialGradientToCenter: linear-gradient($midnightblue, $ligtermidnightBlue);
+
+/** Borders */
+$grayBorder: 4px solid rgba(255, 255, 255, 0.5);
+$darkGrayBorder: 2px solid rgba($gray300, 0.8);
+
+/** Shadows */
+$softShadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+$darkShadow: 0 0 8px 5px rgba(0, 0, 0, 0.3);

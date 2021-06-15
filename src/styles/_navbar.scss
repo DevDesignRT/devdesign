@@ -1,0 +1,41 @@
+.navbar {
+  padding: 0 2rem;
+  height: 6rem;
+  background-color: $midnightblue;
+  .nav-link {
+    color: $white !important;
+    letter-spacing: 1.1px;
+    margin-left: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:active,
+    &--active {
+      background-color: $hotpink;
+      border-radius: 15px;
+      color: $midnightblue !important;
+    }
+  }
+  .navbar-toggler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-collapse-open {
+    position: absolute;
+    padding: 2rem;
+    width: 80%;
+    top: 104px;
+    right: 44px;
+    background-color: $midnightblue;
+    border: $grayBorder;
+    border-radius: 8px;
+    z-index: 100;
+    box-shadow: $softShadow;
+  }
+  @media screen and (min-width: 992px) {
+    //do Smth
+    .navbar-toggler {
+      display: none;
+    }
+  }
+}
