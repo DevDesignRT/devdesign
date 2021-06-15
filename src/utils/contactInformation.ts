@@ -20,11 +20,11 @@ export const ContactInformation: IListItem[] = [
 export const Avatar: IPictureProps = {
   alt: "Avatar of: Roman Tuomisto - Software Engineer",
   src:
-    "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1616357406/YelpCamp/IMG_8665.jpg",
+    "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623748157/YelpCamp/roman-dev.png",
   sources: [
     {
       srcSet:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1616357406/YelpCamp/IMG_8665.jpg",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623748157/YelpCamp/roman-dev.png",
       media: "(min-width:650px)",
     },
   ],

@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 25%;
+  width: 100%;
   padding: 0.5rem 1rem;
   border-radius: 15px;
   font-size: 1.3rem;
@@ -16,5 +16,36 @@
   svg {
     height: 1.3rem;
     width: 1.3rem;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &--bi-arrow-repeat {
+    -webkit-animation: spin 2.5s linear infinite;
+    -moz-animation: spin 2.5s linear infinite;
+    animation: spin 2.5s linear infinite;
+  }
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  //do Smth
+  .button {
+    width: 30%;
   }
 }

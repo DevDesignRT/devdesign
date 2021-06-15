@@ -32,3 +32,16 @@ section:nth-of-type(2) {
   display: flex;
   flex-direction: row;
 }
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    color: $midnightblue;
+    font-weight: 500;
+    display: block;
+    &:hover {
+      color: $midnightblue;
+    }
+  }
+}

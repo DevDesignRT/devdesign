@@ -2,8 +2,17 @@ import React, { FC } from "react";
 import { Link } from "gatsby";
 import { IButtonProps } from "../../@types/declarations";
 import ArrowIcon from "./ArrowIcon";
+import LoadingIcon from "./LoadingIcon";
 
-const Button: FC<IButtonProps> = ({ type, size, buttonText, link, href }) => {
+const Button: FC<IButtonProps> = ({
+  type,
+  size,
+  buttonText,
+  disabled,
+  link,
+  href,
+  loading,
+}) => {
   return (
     <>
       {link ? (
@@ -11,8 +20,21 @@ const Button: FC<IButtonProps> = ({ type, size, buttonText, link, href }) => {
           {buttonText}
           <ArrowIcon />
         </Link>
+      ) : loading ? (
+        <button
+          type={type}
+          disabled={disabled}
+          className={`button button--${size}`}
+        >
+          {buttonText}
+          <LoadingIcon />
+        </button>
       ) : (
-        <button type={type} className={`button button--${size}`}>
+        <button
+          type={type}
+          disabled={disabled}
+          className={`button button--${size}`}
+        >
           {buttonText}
           <ArrowIcon />
         </button>

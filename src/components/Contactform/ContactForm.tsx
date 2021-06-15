@@ -11,14 +11,15 @@ const ContactForm: FC = () => {
   const [contactForm, updateContactForm] = useState<IContactFormState>(
     resetContactFormState()
   );
+  const [sending, setSending] = useState<boolean>(false);
   const [resMessage, updateResMessage] = useState<string>("");
   const { name, email, message, subject } = contactForm;
   const handleChange = (event: any) => {
-    console.log(event.target.name, event.target.value);
     updateContactForm({ [event.target.name]: event.target.value } as any);
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    setSending(true);
     const formData = new FormData(event.target);
     const contact = {
       subject: formData.get("subject"),
@@ -31,6 +32,7 @@ const ContactForm: FC = () => {
       .then((response) => {
         updateContactForm(resetContactFormState());
         updateResMessage(response.data.message);
+        setSending(false);
       })
       .catch((error) => {
         console.log(error);
@@ -92,10 +94,12 @@ const ContactForm: FC = () => {
         />
       </div>
       <Button
+        loading={sending ? true : false}
         type="submit"
-        buttonText="Send"
+        buttonText={sending ? "Sending..." : "Send"}
         size="lg"
         clickHandler={handleSubmit}
+        disabled={sending ? true : false}
       />
     </form>
   );

@@ -21,10 +21,15 @@ export interface ISource {
 export interface IButtonProps {
   type: ButtonTypes;
   buttonText: string;
+  loading?: boolean;
+  disabled?: boolean;
   size: Sizes;
   clickHandler: (event: any) => void;
   link?: boolean;
   href?: string;
+}
+export interface IResponseMessageProps {
+  message: string;
 }
 export interface IHeroBannerProps {
   title: string;

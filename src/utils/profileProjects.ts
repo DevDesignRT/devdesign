@@ -6,7 +6,7 @@ export const ProfileProjects: ICardProps[] = [
     title: "Rolling Records Tmi",
     domain: "https://www.rollingrecords.fi",
     content:
-      "Ecommerce web app with multiple checkout integrations, hight SEO and international selling. Build witn NodeJS with love science 2016. Uses EJS templating, JQuery, SASS, Webpack 4 and much more. See you ar RollingRecords store, where you can find favorite music from over 30k different products.",
+      "Ecommerce Web App with multiple checkout integrations, hight SEO and international selling. Build witn NodeJS and also uses EJS templating, JQuery, SASS, Webpack 4 and much more. See you ar RollingRecords store, where you can find favorite music from over 30k different products.",
     picture: {
       alt: "Ecommerce web app of Rolling Records Tmi",
       src:
@@ -47,7 +47,8 @@ export const ProfileProjects: ICardProps[] = [
     id: 3,
     title: "Rengas Center",
     domain: "https://klaukkalanrengas.fi",
-    content: "",
+    content:
+      "Sigle page application made with Create React App, connects to node backend, that feches tyres from database, also has admin panel, where new tyres can be added and existing ones can be edited and removed.",
     picture: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623527218/YelpCamp/klaukkalanrengassite.png",
@@ -65,7 +66,8 @@ export const ProfileProjects: ICardProps[] = [
     id: 4,
     title: "Klaukkalan autohuolto Oy",
     domain: "https:/www.klaukkalanautohuolto.fi",
-    content: "",
+    content:
+      "Basic single page HTML template that serves company as homepage. Includes contact form and PHP backend to send email.",
     picture: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623531814/YelpCamp/klaukkalanautohuoltosite.png",
@@ -83,7 +85,8 @@ export const ProfileProjects: ICardProps[] = [
     id: 5,
     title: "Salon Looking Good Tmi",
     domain: "https://www.salonlookinggood.fi",
-    content: "",
+    content:
+      "Gatsby JS sigle page app, has nodeJS backend to send email from contact form.",
     picture: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526492/YelpCamp/Screenshot_2021-06-12_at_22.25.11.png",
@@ -101,7 +104,8 @@ export const ProfileProjects: ICardProps[] = [
     id: 6,
     title: "Venpo Energia Oy",
     domain: "https://www.venpoenergia.fi",
-    content: "",
+    content:
+      "Basic single page HTML template that serves company as landing page to introduce all businesses company has by providing brief overview.",
     picture: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564308/YelpCamp/venpoenergiasite.png",
