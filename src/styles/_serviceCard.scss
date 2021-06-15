@@ -1,0 +1,10 @@
+.serviceCard {
+  &--header {
+    min-height: 27rem;
+  }
+  a {
+    color: $midnightblue;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

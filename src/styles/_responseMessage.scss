@@ -1,0 +1,12 @@
+.responseMessage {
+  &--header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__icon {
+      height: 3rem;
+      width: 3rem;
+      margin-right: 1rem;
+    }
+  }
+}

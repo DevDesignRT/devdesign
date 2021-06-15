@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { Link } from "gatsby";
 import { IButtonProps } from "../../@types/declarations";
-import ArrowIcon from "./ArrowIcon";
-import LoadingIcon from "./LoadingIcon";
+import ArrowIcon from "../Icons/ArrowIcon";
+import LoadingIcon from "../Icons/LoadingIcon";
 
 const Button: FC<IButtonProps> = ({
   type,
@@ -12,6 +12,7 @@ const Button: FC<IButtonProps> = ({
   link,
   href,
   loading,
+  clickHandler,
 }) => {
   return (
     <>
@@ -29,11 +30,21 @@ const Button: FC<IButtonProps> = ({
           {buttonText}
           <LoadingIcon />
         </button>
+      ) : type === "submit" ? (
+        <button
+          type={type}
+          disabled={disabled}
+          className={`button button--${size}`}
+        >
+          {buttonText}
+          <ArrowIcon />
+        </button>
       ) : (
         <button
           type={type}
           disabled={disabled}
           className={`button button--${size}`}
+          onClick={clickHandler}
         >
           {buttonText}
           <ArrowIcon />

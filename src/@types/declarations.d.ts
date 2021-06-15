@@ -30,6 +30,7 @@ export interface IButtonProps {
 }
 export interface IResponseMessageProps {
   message: string;
+  handleClick: () => void;
 }
 export interface IHeroBannerProps {
   title: string;
@@ -47,6 +48,11 @@ export interface IHeroBannerImageProps {
   src: string;
   alt: string;
   sources: ISource[];
+}
+export interface IServiceCardProps extends IHeroBannerImageProps {
+  id?: number;
+  description: string;
+  href: string;
 }
 export interface INavLink {
   id?: number;
