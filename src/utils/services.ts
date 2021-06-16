@@ -52,4 +52,21 @@ export const services: IServiceCardProps[] = [
     ],
     href: "/contact",
   },
+  {
+    id: 4,
+    title: "UI & UX Design",
+    description:
+      "UI & UX Design for existing websites, webapps or new Web apps and Websites. Includes Figma designs and svg files of logos and icons.",
+    src:
+      "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623511196/YelpCamp/mobiledev.png",
+    alt: "DevDesign, UI & UX Design",
+    sources: [
+      {
+        srcSet:
+          "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623511196/YelpCamp/mobiledev.png",
+        media: "(min-width:650px)",
+      },
+    ],
+    href: "/contact",
+  },
 ];

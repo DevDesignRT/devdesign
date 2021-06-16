@@ -4,7 +4,14 @@ export type HeadingVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 export type HeadingSizes = "xs" | "sm" | "md" | "lg" | "xlg" | "xxlg";
 export type Sizes = "sm" | "md" | "lg";
 export type TextColors = "black" | "white" | "hotpink";
-export type Subjects = "inquiry" | "feedback" | "";
+export type Subjects =
+  | "New Web App"
+  | "New Website"
+  | "SEO optimisation"
+  | "UI & UX Design",
+  | "inquiry"
+  | "feedback"
+  | "";
 export type ButtonTypes = "submit" | "button" | "reset";
 export type InputTypes =
   | "text"
@@ -104,7 +111,7 @@ export interface IBodyTextProps {
   children: any;
 }
 export interface IBorderProps {
-  color: "pink" | "orange";
+  color: "pink" | "orange" | "dark";
 }
 export interface IHeadingProps {
   variant: HeadingVariants;
