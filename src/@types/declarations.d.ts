@@ -8,7 +8,7 @@ export type Subjects =
   | "New Web App"
   | "New Website"
   | "SEO optimisation"
-  | "UI & UX Design",
+  | "UI & UX Design"
   | "inquiry"
   | "feedback"
   | "";

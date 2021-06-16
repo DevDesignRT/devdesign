@@ -12,4 +12,12 @@ export const navLinks: INavLink[] = [
   },
 ];
 
-export const SubjectOptions: Subjects[] = ["", "inquiry", "feedback"];
+export const SubjectOptions: Subjects[] = [
+  "",
+  "New Web App",
+  "New Website",
+  "SEO optimisation",
+  "UI & UX Design",
+  "inquiry",
+  "feedback",
+];
