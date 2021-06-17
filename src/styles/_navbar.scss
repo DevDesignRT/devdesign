@@ -5,8 +5,8 @@
   .nav-link {
     color: $white !important;
     letter-spacing: 1.1px;
-    margin-left: 2rem;
     text-decoration: none;
+    padding-left: 1.5rem;
     text-transform: uppercase;
     &:active,
     &--active {
@@ -36,6 +36,10 @@
     //do Smth
     .navbar-toggler {
       display: none;
+    }
+    .nav-link {
+      margin-left: 2rem;
+      padding-left: 0;
     }
   }
 }
