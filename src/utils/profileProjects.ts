@@ -6,7 +6,7 @@ export const ProfileProjects: ICardProps[] = [
     title: "Rolling Records Tmi",
     domain: "https://www.rollingrecords.fi",
     content:
-      "Ecommerce Web App with multiple checkout integrations, hight SEO and international selling. Build witn NodeJS and also uses EJS templating, JQuery, SASS, Webpack 4 and much more. See you ar RollingRecords store, where you can find favorite music from over 30k different products. #mongodb #nodejs #developer #design #webdevelopment #ui #vinyl #Marketing #platforms",
+      "Ecommerce Web App with multiple checkout integrations, hight SEO and international selling. Build witn NodeJS and also uses EJS templating, JQuery, SASS, Webpack 4 and much more. See you ar RollingRecords store, where you can find favorite music from over 30k different products. 2#mongodb #nodejs #developer #design #webdevelopment #ui #vinyl #Marketing #platforms",
     picture: {
       alt: "Ecommerce web app of Rolling Records Tmi",
       src:
