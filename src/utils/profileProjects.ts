@@ -6,7 +6,7 @@ export const ProfileProjects: ICardProps[] = [
     title: "Rolling Records Tmi",
     domain: "https://www.rollingrecords.fi",
     content:
-      "Ecommerce Web App with multiple checkout integrations, hight SEO and international selling. Build witn NodeJS and also uses EJS templating, JQuery, SASS, Webpack 4 and much more. See you ar RollingRecords store, where you can find favorite music from over 30k different products.",
+      "Ecommerce Web App with multiple checkout integrations, hight SEO and international selling. Build witn NodeJS and also uses EJS templating, JQuery, SASS, Webpack 4 and much more. See you ar RollingRecords store, where you can find favorite music from over 30k different products. #mongodb #nodejs #developer #design #webdevelopment #ui #vinyl #Marketing #platforms",
     picture: {
       alt: "Ecommerce web app of Rolling Records Tmi",
       src:
@@ -24,11 +24,7 @@ export const ProfileProjects: ICardProps[] = [
     id: 2,
     title: "Halkoliiteri.com",
     domain: "https://www.halkoliiteri.com",
-    content: `Lanseerasimme hetki sitten uudistetun halkoliiteri.com palvelun, jossa voi ostaa ja myydä polttopuuta Lapista Helsinkiin koko Suomen alueella.
-              Halkoliiteri.com on alunperin tehty jsp:llä (Java Server Pages) teknologiaa hyödyntäen yli 10 vuotta sitten, uudistettu versio pyörii NodeJS:n ja ReactJS:n voimin.
-              Otamme vastaan kaikki kehitysideat, jotta yhdessä ostajien ja myyjien kanssa voisimme rakentaa hienon palvelun, jossa voi entistä kätevämmin ostaa ja myydä polttopuita.
-              Nähdään https://www.halkoliiteri.com sivuilla,
-              Lämmintä ja aurinkoista grillikautta kaikille!
+    content: `Renewed halkoliieri.com web app, brings all registered firewood sellers closer, by showing them now  on the map around Finland. Find firewood offer and buy it online. Halkoliiteri.com service was launched over 10 years ago originally and old app was build using JSP (Java Server Pages). New version is Build using React, Typescript and NodeJS.
               #reactjs #nodejs #developer #design #webdevelopment #ui #firewood #Marketing #platforms`,
     picture: {
       src:
@@ -48,7 +44,7 @@ export const ProfileProjects: ICardProps[] = [
     title: "Rengas Center",
     domain: "https://klaukkalanrengas.fi",
     content:
-      "Sigle page application made with Create React App, connects to node backend, that feches tyres from database, also has admin panel, where new tyres can be added and existing ones can be edited and removed.",
+      "Sigle page application made with Create React App, connects to node backend, that feches tyres from database, also has admin panel, where new tyres can be added and existing ones can be edited and removed. #reactjs #nodejs #developer #design #webdevelopment #ui #firewood #Marketing #platforms",
     picture: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623527218/YelpCamp/klaukkalanrengassite.png",
