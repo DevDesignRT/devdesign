@@ -34,7 +34,7 @@ const Portfolio: FC = () => {
           <div className="row my-5">
             {ProfileProjects.map((ProfileProject: ICardProps) => {
               return (
-                <div key={ProfileProject.id} className="col-sm-6 col-md-4">
+                <div key={ProfileProject.id} className="col-6 col-md-4">
                   <Card
                     id={ProfileProject.id}
                     title={ProfileProject.title}

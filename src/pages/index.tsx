@@ -39,7 +39,7 @@ const App = () => {
             </div>
             {services.map((service: IServiceCardProps) => {
               return (
-                <div key={service.id} className="col-md-3 col-sm-6">
+                <div key={service.id} className="col-6 col-md-3">
                   <ServiceCard
                     href={service.href}
                     title={service.title}
@@ -57,7 +57,7 @@ const App = () => {
       <section className="mainSection">
         <div className="container">
           <div className="row">
-            <div className="col-md-9">
+            <div className="col-md-9 col-10">
               <h3>DevDesign offers SEO (Search engine optimisation) service</h3>
               <article className="flexSection">
                 <Picture

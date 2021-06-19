@@ -35,7 +35,7 @@ const Contact: FC = () => {
       <section className="mainSection">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-12">
               <h3>Our Team</h3>
             </div>
             <div className="col-md-3">
@@ -50,7 +50,7 @@ const Contact: FC = () => {
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-sm-12">
+            <div className="col-12">
               <h3>Contact us</h3>
             </div>
             <div className="col-md-6 flexCol">
