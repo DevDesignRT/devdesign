@@ -41,14 +41,12 @@ const Contact: FC = () => {
             {TeamMembers.map((member: ITeamMember) => {
               return (
                 <div className="col-12 col-md-4" key={member.avatar.src}>
-                  <div className="col-md-3">
-                    <Picture
-                      src={member.avatar.src}
-                      alt={member.avatar.alt}
-                      sources={member.avatar.sources}
-                    />
-                  </div>
-                  <div className="col-md-9">
+                  <Picture
+                    src={member.avatar.src}
+                    alt={member.avatar.alt}
+                    sources={member.avatar.sources}
+                  />
+                  <div>
                     <h4>{member.information.jobTitle}</h4>
                     <p>{member.information.name}</p>
                     <p>{member.information.experience}</p>
