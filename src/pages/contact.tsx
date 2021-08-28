@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from "react";
+import React, { FC } from "react";
 import { ITeamMember } from "../@types/declarations";
 import ContactForm from "../components/Contactform/ContactForm";
 import ContactInformation from "../components/ContactInformation/ContactInformation";
@@ -40,7 +40,7 @@ const Contact: FC = () => {
             </div>
             {TeamMembers.map((member: ITeamMember) => {
               return (
-                <Fragment key={member.avatar.src}>
+                <div className="col-12 col-md-4" key={member.avatar.src}>
                   <div className="col-md-3">
                     <Picture src={member.avatar.src} alt={member.avatar.alt} sources={member.avatar.sources} />
                   </div>
@@ -49,7 +49,7 @@ const Contact: FC = () => {
                     <p>{member.information.name}</p>
                     <p>{member.information.experience}</p>
                   </div>
-                </Fragment>
+                </div>
               );
             })}
           </div>
