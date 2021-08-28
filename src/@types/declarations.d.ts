@@ -119,6 +119,15 @@ export interface IHeadingProps {
   children: string;
   color: TextColors;
 }
+export interface ITeamMember {
+  avatar: IPictureProps;
+  information: IInformation;
+}
+export interface IInformation {
+  jobTitle: string;
+  name: string;
+  experience: string;
+}
 export interface IPictureProps {
   sources: ISource[];
   grayScale?: boolean;
