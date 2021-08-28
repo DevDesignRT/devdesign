@@ -42,7 +42,11 @@ const Contact: FC = () => {
               return (
                 <div className="col-12 col-md-4" key={member.avatar.src}>
                   <div className="col-md-3">
-                    <Picture src={member.avatar.src} alt={member.avatar.alt} sources={member.avatar.sources} />
+                    <Picture
+                      src={member.avatar.src}
+                      alt={member.avatar.alt}
+                      sources={member.avatar.sources}
+                    />
                   </div>
                   <div className="col-md-9">
                     <h4>{member.information.jobTitle}</h4>
@@ -52,6 +56,8 @@ const Contact: FC = () => {
                 </div>
               );
             })}
+            <h3>Follow us</h3>
+            <SocialLinks />
           </div>
           <div className="row mt-5">
             <div className="col-12">
@@ -66,7 +72,6 @@ const Contact: FC = () => {
             </div>
             <div className="col-md-6">
               <ContactForm />
-              <SocialLinks />
             </div>
           </div>
         </div>
