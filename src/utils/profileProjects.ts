@@ -119,15 +119,34 @@ export const ProfileProjects: ICardProps[] = [
     id: 7,
     title: "JK Beauty Room Tmi",
     domain: "https://jkbeautyroom.fi",
-    content: "Homepage of Beauty salon made with GatsbyJS.",
+    content: "Homepage of Beauty salon, has custom CMS made using NodeJS and template engine for node called handlebars.",
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564564/YelpCamp/jkbeautyroomsite.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/YelpCamp/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
       alt: "JK Beauty Room, basic modern homepage",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564564/YelpCamp/jkbeautyroomsite.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/YelpCamp/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
+          media: "(min-width:650px)",
+        },
+      ],
+    },
+  },
+  {
+    id: 8,
+    title: "Skyfall Agency",
+    domain: "https://skyfall-agency.netlify.app/",
+    content:
+      "Agency's static website, build with Gatsby and Strapi with GraphQL. Strapi CMS backend is hosted using AWS cloud provider.",
+    picture: {
+      alt: "Gatsby Static Site, Skyfall Agency",
+      src:
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/YelpCamp/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
+      sources: [
+        {
+          srcSet:
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/YelpCamp/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
           media: "(min-width:650px)",
         },
       ],

@@ -1,4 +1,5 @@
 import { HTMLAttributeReferrerPolicy } from "react";
+import { technologies } from "../data/technologies";
 
 export type HeadingVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 export type HeadingSizes = "xs" | "sm" | "md" | "lg" | "xlg" | "xxlg";
@@ -161,4 +162,25 @@ export interface IContactFormState {
   email: string;
   message: string;
   subject: Subjects;
+}
+
+type TechnologyNames =
+  | "React"
+  | "Node"
+  | "Next"
+  | "Gatsby"
+  | "GraphQL"
+  | "Docker"
+  | "AWS"
+  | "Netlify"
+  | "Git"
+  | "Terraform"
+  | "Strapi"
+  | "Python";
+
+export interface ITechnology {
+  name: TechnologyNames;
+  id: number;
+  url: string;
+  image: string;
 }

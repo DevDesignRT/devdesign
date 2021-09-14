@@ -57,7 +57,7 @@ const App = () => {
       <section className="mainSection">
         <div className="container">
           <div className="row">
-            <div className="col-md-9 col-10">
+            <div className="col-md-12 col-12">
               <h3>DevDesign offers SEO (Search engine optimisation) service</h3>
               <article className="flexSection">
                 <Picture
