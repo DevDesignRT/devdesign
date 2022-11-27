@@ -119,7 +119,8 @@ export const ProfileProjects: ICardProps[] = [
     id: 7,
     title: "JK Beauty Room Tmi",
     domain: "https://jkbeautyroom.fi",
-    content: "Homepage of Beauty salon, has custom CMS made using NodeJS and template engine for node called handlebars.",
+    content:
+      "Homepage of Beauty salon, has custom CMS made using NodeJS and template engine for node called handlebars.",
     picture: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/YelpCamp/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
@@ -147,6 +148,25 @@ export const ProfileProjects: ICardProps[] = [
         {
           srcSet:
             "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/YelpCamp/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
+          media: "(min-width:650px)",
+        },
+      ],
+    },
+  },
+  {
+    id: 9,
+    title: "Prospect OOO",
+    domain: "http://www.prospecttmn.ru",
+    content:
+      "Agency's static website, build with Gatsby and Strapi with GraphQL.",
+    picture: {
+      alt: "Gatsby Static Site, Prospect OOO",
+      src:
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/YelpCamp/prospecttmn.png",
+      sources: [
+        {
+          srcSet:
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/YelpCamp/prospecttmn.png",
           media: "(min-width:650px)",
         },
       ],

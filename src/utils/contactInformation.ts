@@ -1,4 +1,4 @@
-import { IListItem, IPictureProps, ITeamMember } from "../@types/declarations";
+import { IListItem, ITeamMember } from "../@types/declarations";
 
 export const ContactInformation: IListItem[] = [
   {

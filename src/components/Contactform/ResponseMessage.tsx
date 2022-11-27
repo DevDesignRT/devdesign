@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { IResponseMessageProps } from "../../@types/declarations";
 import Button from "../Button/Button";
-import CheckIcon from "../Icons/CheckIcon";
+import Icon from "../Icon/Icon";
 
 const ResponseMessage: FC<IResponseMessageProps> = ({
   message,
@@ -11,7 +11,7 @@ const ResponseMessage: FC<IResponseMessageProps> = ({
     <div className="responseMessage">
       <div className="responseMessage--header">
         <span>
-          <CheckIcon />
+          <Icon iconName="check" />
         </span>
         <h3>Thank you for contacting us!</h3>
       </div>
