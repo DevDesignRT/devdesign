@@ -61,7 +61,7 @@ export const ProfileProjects: ICardProps[] = [
   {
     id: 4,
     title: "Klaukkalan autohuolto Oy",
-    domain: "https:/www.klaukkalanautohuolto.fi",
+    domain: "https://www.klaukkalanautohuolto.fi",
     content:
       "Basic single page HTML template that serves company as homepage. Includes contact form and PHP backend to send email.",
     picture: {
