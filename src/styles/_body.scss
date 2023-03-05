@@ -31,11 +31,17 @@ pre {
 
   .preP {
     color: $gray100;
+    font-size: 1rem;
   }
 }
 
 pre.lighter {
-  background-color: $violet;
+  background-color: $gray300;
+  color: $midnightblue;
+
+  .preP {
+    color: $midnightblue;
+  }
 }
 
 .form {

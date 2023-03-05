@@ -59,7 +59,62 @@ const blogPosts: Blog[] = [
       <p>As a final step, we will test that Redis can persist data, even after it’s been stopped or restarted.</p>
       <p>In  order to do this, first restart the Redis instance:</p>
       <div class="col-md-6"><pre><span>sudo systemctl restart redis</span></pre></div>
-      
+      <p>Next connect with the command-line client to Redis and confirm that your "test value" is still in memory:</p>
+      <div class="col-md-6"><pre><p class="preP">redis-cli</p><p class="preP">get test</p></pre></div>
+      <p>The value of your key should still be accessible:</p>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">"It's working!"</p></pre></div>
+      <p>Exit when you are finished:</p>
+      <div class="col-md-6"><pre><span>exit</span></pre></div>
+      <p>Now your Redis is fully operational. However, some of its default configuration settings are insecure and may give hackers opportunities to attack and gain access to your server and its data.</p>
+      <p>Two final steps will cover methods for mitigating these vulnerabilities, as it is recommended by the official Redis website.</p>
+      <h3>Step 3 — Binding to localhost</h3>
+      <p>By default, Redis is only accessible from localhost. However, if you updated Redis configuration file to allow connections from anywhere, you should ensure that Redis is only accessible from localhost.
+      <p>Fix by opening the Redis configuration file:</p>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">sudo vim /etc/redis/redis.conf</p><blockquote>Locate this line and make sure it is uncommented (remove the # if it exists):</blockquote><p class="preP">bind 127.0.0.1 ::1</p></pre></div>
+      <p>Save and close the file when finished.</p>
+      <p>Next restart the service to ensure, that systemd runs with your changes:</p>
+      <div class="col-md-6"><pre><span>sudo systemctl restart redis</span></pre></div>
+      <p>To check, that this change is working, run the following netstat command:</p>
+      <div class="col-md-6"><pre><span>sudo netstat -lnp | grep redis</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">tcp  0  0 127.0.0.1:6379  0.0.0.0:*  LISTEN  14222/redis-server</p><p class="preP">tcp6 0  0 ::1:6379        :::*       LISTEN  14222/redis-server</p></pre></div>
+      <p>Following shows, that the redis-server is bound to localhost (127.0.0.1), reflecting the bind setting in the Redis configuration file. If you see another IP address in that column (0.0.0.0, for example), then you should restart the Redis service again.</p>
+      <p>Finally when your Redis is only listening in on localhost, it will be more difficult for hackers to make requests to Redis or gain access to your server.</p>
+      <p>However, Redis isn’t currently set to require users to authenticate themselves, before making changes to its configuration or the data that it holds. In order to fix this, let's require Redis to authenticate users with Password.</p>
+      <h3>Step 4 — Configuring a Redis Password</h3>
+      <p>Configure a Redis password, in order to enable it's built-in security feature — the auth command, which requires clients to authenticate to access the database.</p>
+      <p>The Redis password is enabled in Redis’s configuration file "/etc/redis/redis.conf":</p>
+      <div class="col-md-6"><pre><span>sudo vim /etc/redis/redis.conf</span></pre></div>
+      <p>Scroll to the SECURITY section and look for a commented directive that reads:</p>
+      <div class="col-md-6"><pre><span># requirepass foobared</span></pre></div>
+      <p>Uncomment it by removing the #, and change foobared to a secure password.</p>
+      <p>Note: Above the requirepass directive in the redis.conf file:</p>
+      <p># use a very strong password otherwise it will be very easy to break.</p>
+      <p>It’s important that you specify a very strong and very long password. Use the openssl command to generate a random password:</p>
+      <div class="col-md-6"><pre><span>openssl rand 60 | openssl base64 -A</span></pre></div>
+      <p>Your output should look something like:</p>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">RBOJ9cCNoGCKhlEBwQLHri1g+atWgn4Xn4HwNUbtzoVxAYxkiYBi7aufl4MILv1nxBqR4L6NNzI0X6cE</p></pre></div>
+      <p>After setting the Redis password, save and close the file, then restart Redis:</p>
+      <div class="col-md-6"><pre><span>sudo systemctl restart redis.service</span></pre></div>
+      <p>To test newely added Redi password, open up the Redis client:</p>
+      <div class="col-md-6"><pre><span>redis-cli</span></pre></div>
+      <p>First try to add a key without password:</p>
+      <div class="col-md-6"><pre><span>set key1 10</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">(error) NOAUTH Authentication required.</p></pre></div>
+      <p>Then authenticate:</p>
+      <div class="col-md-6"><pre><span>auth your_redis_password</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">OK</p></pre></div>
+      <p>Secondly try to add a key with Redis password:</p>
+      <div class="col-md-6"><pre><span>set key1 10</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">OK</p></pre></div>
+      <p>get key1 queries Redis for the value of the new key:</p>
+      <div class="col-md-6"><pre><span>get key1</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">"10"</p></pre></div>
+      <p>exit the redis-cli:</p>
+      <div class="col-md-6"><pre><span>quit</span></pre></div>
+      <p>Last 5th step, is dedicated at renaming Redis commands which, if entered by mistake or by a hacker, could cause serious damage to your Redis database.</p>
+      <h3>Step 5 — Renaming Dangerous Commands</h3>
+
+
 
     `,
     cover: {

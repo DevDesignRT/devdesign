@@ -8,8 +8,7 @@ interface CreatedStampProps {
 const CreatedStamp: FC<CreatedStampProps> = ({ createdAt, createdBy }) => {
   return (
     <blockquote>
-      Created: {createdAt}, by
-      {createdBy}
+      Created: {createdAt}, by {createdBy}
     </blockquote>
   );
 };
