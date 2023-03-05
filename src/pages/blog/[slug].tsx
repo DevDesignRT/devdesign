@@ -1,26 +1,15 @@
 import React, { FC } from "react";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
 import Layout from "../../components/Layout/Layout";
-import {
-  heroBannerBlogData,
-  heroBannerBlogPicture,
-} from "../../utils/heroBannerData";
+import { heroBannerBlogData } from "../../utils/heroBannerData";
 import Blog from "../../@types/blog";
 import { useLocation } from "@reach/router";
-import Picture from "../../components/Picture/Picture";
-import { Link } from "gatsby";
 import blogPosts from "../../data/blogPosts";
 import CreatedStamp from "../../components/CreatedStamp/CreatedStamp";
+import { IHeroBannerImageProps } from "../../@types/declarations";
 
 const BlogPostPage: FC = () => {
-  const {
-    title,
-    subTitle,
-    paragraphs,
-    buttonText,
-    href,
-    link,
-  } = heroBannerBlogData;
+  const { title, buttonText, href, link } = heroBannerBlogData;
   const location = useLocation();
   const blogPost = blogPosts.find(
     (blogPost: Blog) => blogPost.slug === location.pathname.split("/")[2]
@@ -31,10 +20,10 @@ const BlogPostPage: FC = () => {
         link={link}
         href={href}
         title={title}
-        subTitle={subTitle}
-        paragraphs={paragraphs}
+        subTitle={blogPost?.title as string}
+        paragraphs={[`Time to read: ${blogPost?.timeToRead}`]}
         buttonText={buttonText}
-        heroBannerImage={heroBannerBlogPicture}
+        heroBannerImage={(blogPost?.cover as unknown) as IHeroBannerImageProps}
       />
       <section className="mainSection">
         <div className="container">

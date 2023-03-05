@@ -13,6 +13,7 @@ interface Blog {
   cover: Image;
   slug: string;
   createdAt: string | Date;
+  timeToRead: string;
 }
 
 export default Blog;

@@ -24,6 +24,20 @@ section:nth-of-type(2) {
   }
 }
 
+pre {
+  padding: 1rem;
+  background-color: $ligtermidnightBlue;
+  color: $gray100;
+
+  .preP {
+    color: $gray100;
+  }
+}
+
+pre.lighter {
+  background-color: $violet;
+}
+
 .form {
   button {
     margin-top: 4rem;
