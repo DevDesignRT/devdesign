@@ -70,7 +70,8 @@ const blogPosts: Blog[] = [
       <h3>Step 3 — Binding to localhost</h3>
       <p>By default, Redis is only accessible from localhost. However, if you updated Redis configuration file to allow connections from anywhere, you should ensure that Redis is only accessible from localhost.
       <p>Fix by opening the Redis configuration file:</p>
-      <div class="col-md-9"><pre class="lighter"><p class="preP">sudo vim /etc/redis/redis.conf</p><blockquote>Locate this line and make sure it is uncommented (remove the # if it exists):</blockquote><p class="preP">bind 127.0.0.1 ::1</p></pre></div>
+      <div class="col-md-6"><pre><span>sudo vim /etc/redis/redis.conf</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">/etc/redis/redis.conf</p><p>Locate this line and make sure it is uncommented (remove the # if it exists):</p><p class="preP">bind 127.0.0.1 ::1</p></pre></div>
       <p>Save and close the file when finished.</p>
       <p>Next restart the service to ensure, that systemd runs with your changes:</p>
       <div class="col-md-6"><pre><span>sudo systemctl restart redis</span></pre></div>
@@ -110,12 +111,42 @@ const blogPosts: Blog[] = [
       <div class="col-md-6"><pre><span>get key1</span></pre></div>
       <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">"10"</p></pre></div>
       <p>exit the redis-cli:</p>
-      <div class="col-md-6"><pre><span>quit</span></pre></div>
+      <div class="col-md-6"><pre><span>exit</span></pre></div>
       <p>Last 5th step, is dedicated at renaming Redis commands which, if entered by mistake or by a hacker, could cause serious damage to your Redis database.</p>
       <h3>Step 5 — Renaming Dangerous Commands</h3>
-
-
-
+      <p>The second security feature built into Redis is ability to rename or completely disable certain commands (FLUSHDB, FLUSHALL, KEYS, PEXPIRE, DEL, CONFIG, SHUTDOWN, BGREWRITEAOF, BGSAVE, SAVE, SPOP, SREM, RENAME, and DEBUG), that are considered dangerous.</p>
+      <p>Rename or disable commands is configured in the same SECURITY section of the /etc/redis/redis.conf file.</p>
+      <p>How to tell what commands to renme and what to disable should disable, it depends on your specific needs in these commands in your app.</p>
+      <p>For example, if you know, that you will never use a command, then disable it. Otherwise rename it.</p>
+      <p>To enable or disable Redis commands, open the configuration file:</p>
+      <div class="col-md-6"><pre><span>sudo vim /etc/redis/redis.conf</span></pre></div>
+      <p>Warning: These are only examples on how to disable and rename commands. You should only choose to disable or rename the commands that make sense for you.</p>
+      <p>You can review the full list of commands for yourself and determine how they might be misused at <a href="https://redis.io/commands" target="__blank">redis.io/commands</a>.</p>
+      <p>To disable a command, rename it into an empty string, like this:</p>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">/etc/redis/redis.conf</p><p class="preP"># an empty string:</p><p class="preP">rename-command FLUSHDB ""</p><p class="preP">rename-command FLUSHALL ""</p><p class="preP">rename-command DEBUG ""</p></pre></div>
+      <p>To rename a command, just give it another name. Rule about Renamed commands, they should be difficult for others to guess, but easy for you to remember:</p>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">/etc/redis/redis.conf</p><p class="preP"># rename-command CONFIG ""</p><p class="preP">rename-command SHUTDOWN SHUTDOWN_DEVDESIGN</p><p class="preP">rename-command CONFIG DEVDESIGN_CONFIG</p></pre></div>
+      <p>Save your changes and close the file.</p>
+      <p>In order fo renamed commands to be in use, apply the changes by restarting Redis:</p>
+      <div class="col-md-6"><pre><span>sudo systemctl restart redis.service</span></pre></div>
+      <p>To test the renamed commands, open up the Redis client:</p>
+      <div class="col-md-6"><pre><span>redis-cli</span></pre></div>
+      <p>Then authenticate:</p>
+      <div class="col-md-6"><pre><span>auth your_redis_password</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">OK</p></pre></div>
+      <p>Next up try using the original CONFIG command. It should fail:</p>
+      <div class="col-md-6"><pre><span>config get requirepass</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">(error) ERR unknown command 'config'</p></pre></div>
+      <p>Using the renamed command, however, will be successful:</p>
+      <div class="col-md-6"><pre><span>devdesign_config get requirepass</span></pre></div>
+      <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">1) "requirepass"</p><p class="preP">2) "your_redis_password"</p></pre></div>
+      <p>Finally, you can exit from redis-cli:</p>
+      <div class="col-md-6"><pre><span>exit</span></pre></div>
+      <h3>Conclusion</h3>
+      <p>We have installed and configured Redis, validated that the Redis is functioning properly, and used its built-in security features, to make it less vulnerable to attacks from hackers.</p>
+      <p>Remember that, once hacker gets into your server, it’s very easy toget access to the Redis-specific security features.</p>
+      <p>For this reason, the most important security feature on your Redis server is your firewall, as it makes it extremely difficult for hackers to get in.</p>
+      <h4>Thank you for reading!</h4>
     `,
     cover: {
       src:
