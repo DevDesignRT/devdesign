@@ -2,7 +2,7 @@ import { ISource } from "./declarations";
 
 export interface Image {
   src: string;
-  srcSets: ISource[];
+  sources: ISource[];
   alt: string;
   title: string;
 }

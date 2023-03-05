@@ -46,10 +46,10 @@ const HeroBaner: FC<IExtendedHeroBannerProps> = ({
           </div>
           <div className="col-sm-12 col-md-5">
             <Picture
-              src={heroBannerImage.src}
-              alt={heroBannerImage.alt}
-              title={heroBannerImage.title}
-              sources={heroBannerImage.sources}
+              src={heroBannerImage?.src}
+              alt={heroBannerImage?.alt}
+              title={heroBannerImage?.title}
+              sources={heroBannerImage?.sources}
             />
           </div>
         </div>

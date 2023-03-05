@@ -50,7 +50,16 @@ const blogPosts: Blog[] = [
       <p>Next, check that you’re able to set keys by running:</p>
       <div class="col-md-6"><pre><span>set test "It's working!"</span></pre></div>
       <p>Output should be "OK".</p>
-
+      <p>Retrieve the value you have just set by typing:</p>
+      <div class="col-md-6"><pre><span>get test</span></pre></div>
+      <p>If everything was fine, you will retrieve the value you stored:</p>
+      <p>Output "It's working!"</p>
+      <p>Next exit the Redis prompt to get back to the shell:</p>
+      <div class="col-md-6"><pre><span>exit</span></pre></div>
+      <p>As a final step, we will test that Redis can persist data, even after it’s been stopped or restarted.</p>
+      <p>In  order to do this, first restart the Redis instance:</p>
+      <div class="col-md-6"><pre><span>sudo systemctl restart redis</span></pre></div>
+      
 
     `,
     cover: {
@@ -58,7 +67,7 @@ const blogPosts: Blog[] = [
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1678003966/DevDesign/redis.png",
       alt: "Redis",
       title: "Redis on AWS EC2",
-      srcSets: [
+      sources: [
         {
           srcSet:
             "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1678003966/DevDesign/redis.png",
