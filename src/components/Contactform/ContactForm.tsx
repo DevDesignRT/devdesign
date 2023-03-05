@@ -50,7 +50,7 @@ const ContactForm: FC = () => {
       {showResponse ? (
         <ResponseMessage message={resMessage} handleClick={handleClick} />
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="subject">Subject *</label>
             <select

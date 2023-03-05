@@ -4,11 +4,12 @@ export const navLinks: INavLink[] = [
   { href: "/", linkText: "DevDesign", id: 1 },
   { href: "/portfolio", linkText: "Portfolio", id: 2 },
   { href: "/contact", linkText: "Contact", id: 3 },
+  { href: "/blog", linkText: "Blog", id: 4 },
   {
     href: "https://www.facebook.com/devdesignrt",
     linkText: "Facebook",
     external: true,
-    id: 4,
+    id: 5,
   },
 ];
 

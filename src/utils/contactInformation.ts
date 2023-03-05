@@ -22,11 +22,11 @@ export const TeamMembers: ITeamMember[] = [
     avatar: {
       alt: "Avatar of: Roman Tuomisto - Senior FullStack Web Developer",
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623748157/YelpCamp/roman-dev.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623748157/DevDesign/roman-dev.png",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623748157/YelpCamp/roman-dev.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623748157/DevDesign/roman-dev.png",
           media: "(min-width:650px)",
         },
       ],
@@ -41,11 +41,11 @@ export const TeamMembers: ITeamMember[] = [
     avatar: {
       alt: "Avatar of: Joseph Heidari - FullStack Web Develpoer and DevOps",
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1630143572/YelpCamp/joseph-heidari.jpg",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1630143572/DevDesign/joseph-heidari.jpg",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1630143572/YelpCamp/joseph-heidari.jpg",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1630143572/DevDesign/joseph-heidari.jpg",
           media: "(min-width:650px)",
         },
       ],
@@ -53,7 +53,7 @@ export const TeamMembers: ITeamMember[] = [
     information: {
       jobTitle: "FullStack Web Develpoer and DevOps",
       name: "Joseph Heidari",
-      experience: "5+ years of experience"
+      experience: "5+ years of experience",
     },
   },
 ];

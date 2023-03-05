@@ -11,12 +11,13 @@ const Navbar = () => {
   };
   useEffect(() => {
     if (typeof window !== "undefined" && !active) {
-      const activeItem =
-        window.location.pathname === "/contact"
-          ? 3
-          : window.location.pathname === "/portfolio"
-          ? 2
-          : 1;
+      const activeItem = /\/blog/.test(window.location.pathname)
+        ? 4
+        : window.location.pathname === "/contact"
+        ? 3
+        : window.location.pathname === "/portfolio"
+        ? 2
+        : 1;
       setActive(activeItem);
     }
     return;

@@ -10,11 +10,11 @@ export const ProfileProjects: ICardProps[] = [
     picture: {
       alt: "Ecommerce web app of Rolling Records Tmi",
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1616313889/YelpCamp/Screenshot_2021-03-21_at_9.57.51.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1616313889/DevDesign/Screenshot_2021-03-21_at_9.57.51.png",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1616313889/YelpCamp/Screenshot_2021-03-21_at_9.57.51.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1616313889/DevDesign/Screenshot_2021-03-21_at_9.57.51.png",
           media: "(min-width:650px)",
         },
       ],
@@ -28,12 +28,12 @@ export const ProfileProjects: ICardProps[] = [
               #reactjs #nodejs #developer #design #webdevelopment #ui #firewood #Marketing #platforms`,
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526895/YelpCamp/halkoliitersite.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526895/DevDesign/halkoliitersite.png",
       alt: "halkoliiteri.com, Marketplace platform to sell and buy firewood",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526895/YelpCamp/halkoliitersite.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526895/DevDesign/halkoliitersite.png",
           media: "(min-width:650px)",
         },
       ],
@@ -47,12 +47,12 @@ export const ProfileProjects: ICardProps[] = [
       "Sigle page application made with Create React App, connects to node backend, that feches tyres from database, also has admin panel, where new tyres can be added and existing ones can be edited and removed. #reactjs #nodejs #developer #design #webdevelopment #ui #firewood #Marketing #platforms",
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623527218/YelpCamp/klaukkalanrengassite.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623527218/DevDesign/klaukkalanrengassite.png",
       alt: "Rengas Center - Klaukkalan rengas Oy, tyre service's website",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623527218/YelpCamp/klaukkalanrengassite.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623527218/DevDesign/klaukkalanrengassite.png",
           media: "(min-width:650px)",
         },
       ],
@@ -66,12 +66,12 @@ export const ProfileProjects: ICardProps[] = [
       "Basic single page HTML template that serves company as homepage. Includes contact form and PHP backend to send email.",
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623531814/YelpCamp/klaukkalanautohuoltosite.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623531814/DevDesign/klaukkalanautohuoltosite.png",
       alt: "Klaukkalan autohuolto Oy, basic modern homepage",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623531814/YelpCamp/klaukkalanautohuoltosite.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623531814/DevDesign/klaukkalanautohuoltosite.png",
           media: "(min-width:650px)",
         },
       ],
@@ -85,12 +85,12 @@ export const ProfileProjects: ICardProps[] = [
       "Gatsby JS sigle page app, has nodeJS backend to send email from contact form.",
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526492/YelpCamp/Screenshot_2021-06-12_at_22.25.11.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526492/DevDesign/Screenshot_2021-06-12_at_22.25.11.png",
       alt: "Salon Looking Good - Parturi & Kampaamo, basic modern homepage",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526492/YelpCamp/Screenshot_2021-06-12_at_22.25.11.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623526492/DevDesign/Screenshot_2021-06-12_at_22.25.11.png",
           media: "(min-width:650px)",
         },
       ],
@@ -104,12 +104,12 @@ export const ProfileProjects: ICardProps[] = [
       "Basic single page HTML template that serves company as landing page to introduce all businesses company has by providing brief overview.",
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564308/YelpCamp/venpoenergiasite.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564308/DevDesign/venpoenergiasite.png",
       alt: "Venpo Energia Oy, basic modern homepage",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564308/YelpCamp/venpoenergiasite.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623564308/DevDesign/venpoenergiasite.png",
           media: "(min-width:650px)",
         },
       ],
@@ -123,12 +123,12 @@ export const ProfileProjects: ICardProps[] = [
       "Homepage of Beauty salon, has custom CMS made using NodeJS and template engine for node called handlebars.",
     picture: {
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/YelpCamp/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/DevDesign/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
       alt: "JK Beauty Room, basic modern homepage",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/YelpCamp/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631564015/DevDesign/Screenshot_2021-09-13_at_23.12.20-removebg-preview.png",
           media: "(min-width:650px)",
         },
       ],
@@ -143,11 +143,11 @@ export const ProfileProjects: ICardProps[] = [
     picture: {
       alt: "Gatsby Static Site, Skyfall Agency",
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/YelpCamp/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/DevDesign/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/YelpCamp/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631563581/DevDesign/Screenshot_2021-09-13_at_20.29.09-removebg-preview.png",
           media: "(min-width:650px)",
         },
       ],
@@ -162,11 +162,11 @@ export const ProfileProjects: ICardProps[] = [
     picture: {
       alt: "Gatsby Static Site, Prospect OOO",
       src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/YelpCamp/prospecttmn.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/DevDesign/prospecttmn.png",
       sources: [
         {
           srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/YelpCamp/prospecttmn.png",
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/DevDesign/prospecttmn.png",
           media: "(min-width:650px)",
         },
       ],
@@ -176,12 +176,12 @@ export const ProfileProjects: ICardProps[] = [
 
 export const indexPageSEO = {
   src:
-    "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623504388/YelpCamp/seo.png",
+    "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623504388/DevDesign/seo.png",
   alt: "SEO search engine optimisation, DevDesign 5+ years of experience",
   sources: [
     {
       srcSet:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623504388/YelpCamp/seo.png",
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1623504388/DevDesign/seo.png",
       media: "(min-width:650px)",
     },
   ],
