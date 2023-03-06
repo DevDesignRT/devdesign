@@ -2,6 +2,27 @@ import Blog from "../@types/blog";
 
 const blogPosts: Blog[] = [
   {
+    title: "AWS - How to setup Ubuntu 22.04 EC2 Instance",
+    body: `h2>Setup AWS Ubuntu 22.04 EC2 Instance</h2>
+      <p>Guide for how to setup Ubuntu 22.04 AWS EC2 instance for Redis.</p>`,
+    cover: {
+      src:
+        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631596944/DevDesign/aws_smile-header-desktop-en-white.png",
+      alt: "AWS Ubuntu 22.04 EC2 instance",
+      title: "AWS Ubuntu 22.04 EC2 instance",
+      sources: [
+        {
+          srcSet:
+            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/c_scale,w_650/v1631596944/DevDesign/aws_smile-header-desktop-en-white.png",
+          media: "(min-width:650px)",
+        },
+      ],
+    },
+    slug: "aws-how-to-setup-ubuntu-22.04-ec2-instance",
+    createdAt: "2023-03-06T06:39:05.234Z",
+    timeToRead: "20 minutes",
+  },
+  {
     title: "AWS — How to Install Redis on EC2 Instance",
     body: `
       <h2>Setup Redis on AWS EC2 Ubuntu</h2>
