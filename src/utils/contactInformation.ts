@@ -34,7 +34,7 @@ export const TeamMembers: ITeamMember[] = [
     information: {
       jobTitle: "Senior FullStack Web Developer",
       name: "Roman Tuomisto",
-      experience: "5+ years of experience",
+      experience: "6+ years of experience",
     },
   },
   {
@@ -53,7 +53,7 @@ export const TeamMembers: ITeamMember[] = [
     information: {
       jobTitle: "FullStack Web Develpoer and DevOps",
       name: "Joseph Heidari",
-      experience: "5+ years of experience",
+      experience: "6+ years of experience",
     },
   },
 ];
