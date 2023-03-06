@@ -7,10 +7,7 @@ import {
   heroBannerBlogPicture,
 } from "../../utils/heroBannerData";
 import Blog from "../../@types/blog";
-import Picture from "../../components/Picture/Picture";
-import { Link } from "gatsby";
-import Button from "../../components/Button/Button";
-import CreatedStamp from "../../components/CreatedStamp/CreatedStamp";
+import BlogPostCard from "../../components/BlogPostCard/BlogPostCard";
 
 const BlogsPage: FC = () => {
   const {
@@ -37,38 +34,7 @@ const BlogsPage: FC = () => {
           <div className="row">
             <div className="col-12 my-4">
               {blogPosts.map((blogPost: Blog) => {
-                return (
-                  <article key={blogPost.slug}>
-                    <div className="row">
-                      <div className="col-md-2">
-                        <Picture
-                          sources={blogPost.cover.srcSets}
-                          src={blogPost.cover.src}
-                          alt={blogPost.cover.alt}
-                        />
-                      </div>
-                      <div className="col-md-7">
-                        <h2>{blogPost.title}</h2>
-                        <CreatedStamp
-                          createdAt={new Date(
-                            blogPost?.createdAt as string
-                          ).toLocaleDateString("us")}
-                          createdBy="Roman Tuomisto"
-                        />
-                      </div>
-                      <div className="col-md-3 d-flex align-items-center justify-content-center">
-                        <Button
-                          buttonText="Read"
-                          size="md"
-                          type="button"
-                          clickHandler={() => {}}
-                          link={true}
-                          href={`/blog/${blogPost.slug}`}
-                        />
-                      </div>
-                    </div>
-                  </article>
-                );
+                return <BlogPostCard key={blogPost.slug} blogPost={blogPost} />;
               })}
             </div>
           </div>

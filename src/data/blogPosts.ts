@@ -3,8 +3,9 @@ import Blog from "../@types/blog";
 const blogPosts: Blog[] = [
   {
     title: "AWS - How to setup Ubuntu 22.04 EC2 Instance",
-    body: `h2>Setup AWS Ubuntu 22.04 EC2 Instance</h2>
-      <p>Guide for how to setup Ubuntu 22.04 AWS EC2 instance for Redis.</p>`,
+    body: `<h2>Setup AWS Ubuntu 22.04 EC2 Instance</h2>
+      <p>Guide for how to setup Ubuntu 22.04 AWS EC2 instance for Redis.</p>
+      `,
     cover: {
       src:
         "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1631596944/DevDesign/aws_smile-header-desktop-en-white.png",
@@ -97,6 +98,8 @@ const blogPosts: Blog[] = [
       <p>Next restart the service to ensure, that systemd runs with your changes:</p>
       <div class="col-md-6"><pre><span>sudo systemctl restart redis</span></pre></div>
       <p>To check, that this change is working, run the following netstat command:</p>
+      <p>If you don't have netstat as commandline executable, run this first:</p>
+      <div class="col-md-6"><pre><span>sudo apt install net-tools</span></pre></div>
       <div class="col-md-6"><pre><span>sudo netstat -lnp | grep redis</span></pre></div>
       <div class="col-md-9"><pre class="lighter"><p class="preP">Output</p><p class="preP">tcp  0  0 127.0.0.1:6379  0.0.0.0:*  LISTEN  14222/redis-server</p><p class="preP">tcp6 0  0 ::1:6379        :::*       LISTEN  14222/redis-server</p></pre></div>
       <p>Following shows, that the redis-server is bound to localhost (127.0.0.1), reflecting the bind setting in the Redis configuration file. If you see another IP address in that column (0.0.0.0, for example), then you should restart the Redis service again.</p>
@@ -185,6 +188,9 @@ const blogPosts: Blog[] = [
     slug: "aws-how-to-install-redis-on-ec2-instance",
     createdAt: "2023-03-05T10:39:02.322Z",
     timeToRead: "30 minutes",
+    dependsOnPrevious: true,
+    prevTitle: "AWS - How to setup Ubuntu 22.04 EC2 Instance",
+    prevSlug: "aws-how-to-setup-ubuntu-22.04-ec2-instance",
   },
 ];
 

@@ -14,6 +14,9 @@ interface Blog {
   slug: string;
   createdAt: string | Date;
   timeToRead: string;
+  dependsOnPrevious?: boolean;
+  prevTitle?: string;
+  prevSlug?: string;
 }
 
 export default Blog;

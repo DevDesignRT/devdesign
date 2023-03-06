@@ -7,6 +7,7 @@ import blogPosts from "../../data/blogPosts";
 import CreatedStamp from "../../components/CreatedStamp/CreatedStamp";
 import { IHeroBannerImageProps } from "../../@types/declarations";
 import BlogPostLayout from "../../components/Layout/BlogPostLayout";
+import { Link } from "gatsby";
 
 const BlogPostPage: FC = () => {
   const { title, buttonText, href, link } = heroBannerBlogData;
@@ -36,6 +37,15 @@ const BlogPostPage: FC = () => {
                 ).toLocaleDateString("us")}
                 createdBy="Roman Tuomisto"
               />
+              {blogPost?.dependsOnPrevious && (
+                <p>
+                  Depends on{" "}
+                  <Link to={`/blog/${blogPost?.prevSlug}`}>
+                    {blogPost?.prevTitle}
+                  </Link>{" "}
+                  to be completed first.
+                </p>
+              )}
               <div
                 dangerouslySetInnerHTML={{
                   __html: (blogPost?.body as unknown) as string,
