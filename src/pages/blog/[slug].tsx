@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
-import Layout from "../../components/Layout/Layout";
 import { heroBannerBlogData } from "../../utils/heroBannerData";
 import Blog from "../../@types/blog";
 import { useLocation } from "@reach/router";
 import blogPosts from "../../data/blogPosts";
 import CreatedStamp from "../../components/CreatedStamp/CreatedStamp";
 import { IHeroBannerImageProps } from "../../@types/declarations";
+import BlogPostLayout from "../../components/Layout/BlogPostLayout";
 
 const BlogPostPage: FC = () => {
   const { title, buttonText, href, link } = heroBannerBlogData;
@@ -15,7 +15,7 @@ const BlogPostPage: FC = () => {
     (blogPost: Blog) => blogPost.slug === location.pathname.split("/")[2]
   );
   return (
-    <Layout>
+    <BlogPostLayout title={blogPost?.title as string}>
       <HeroBanner
         link={link}
         href={href}
@@ -45,7 +45,7 @@ const BlogPostPage: FC = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </BlogPostLayout>
   );
 };
 
