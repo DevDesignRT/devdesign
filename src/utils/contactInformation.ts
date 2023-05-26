@@ -68,8 +68,8 @@ export const CompanyInformation: IListItem[] = [
     id: 2,
   },
   {
-    text: "Email: devdesign@gmail.com",
-    email: "devdesign@gmail.com",
+    text: "Email: devdesignrt@gmail.com",
+    email: "devdesignrt@gmail.com",
     id: 3,
   },
   {

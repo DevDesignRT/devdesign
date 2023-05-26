@@ -9,8 +9,8 @@ const ContactInformation = () => {
       </p>{" "}
       <p>Roman Tuomisto</p>
       <address className="address">
-        <a className="address--contactLink" href="mailto:devdesign@gmail.com">
-          email: devdesign@gmail.com
+        <a className="address--contactLink" href="mailto:devdesignrt@gmail.com">
+          email: devdesignrt@gmail.com
         </a>
         <a
           className="address--contactLink address--contactLink--second"
