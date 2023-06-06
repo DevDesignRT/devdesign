@@ -6,8 +6,8 @@ export const ContactInformation: IListItem[] = [
     id: 1,
   },
   {
-    text: "Email: devdesignrt@gmail.com",
-    email: "devdesignrt@gmail.com",
+    text: "Email: devdesign@devdesign.fi",
+    email: "devdesign@devdesign.fi",
     id: 2,
   },
   {
@@ -68,8 +68,8 @@ export const CompanyInformation: IListItem[] = [
     id: 2,
   },
   {
-    text: "Email: devdesignrt@gmail.com",
-    email: "devdesignrt@gmail.com",
+    text: "Email: devdesign@devdesign.fi",
+    email: "devdesign@devdesign.fi",
     id: 3,
   },
   {

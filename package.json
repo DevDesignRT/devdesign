@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "devdesign",
-  "author": "Roman Tuomisto",
+  "author": {
+    "name": "DevDesign",
+    "email": "devdesign@devdesign.fi",
+    "url": "https://www.devdesign.fi"
+  },
   "keywords": [
     "gatsby"
   ],
