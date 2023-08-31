@@ -153,25 +153,6 @@ export const ProfileProjects: ICardProps[] = [
       ],
     },
   },
-  {
-    id: 9,
-    title: "Prospect OOO",
-    domain: "http://www.prospecttmn.ru",
-    content:
-      "Agency's static website, build with Gatsby and Strapi with GraphQL.",
-    picture: {
-      alt: "Gatsby Static Site, Prospect OOO",
-      src:
-        "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/DevDesign/prospecttmn.png",
-      sources: [
-        {
-          srcSet:
-            "https://res.cloudinary.com/romantuomisto-cloud/image/upload/v1669531200/DevDesign/prospecttmn.png",
-          media: "(min-width:650px)",
-        },
-      ],
-    },
-  },
 ];
 
 export const indexPageSEO = {
